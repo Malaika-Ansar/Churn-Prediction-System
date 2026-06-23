@@ -1,72 +1,105 @@
-# 📊Customer Churn Prediction System
+# 📊 Customer Churn Prediction System
+
 A machine learning web application that predicts whether a telecom customer is likely to churn based on demographic, service usage, and billing information. Built using Python, Scikit-learn, and Streamlit with a One-Hot Encoded classification pipeline.
 
-# Project Overview
+---
+
+# 📌 Project Overview
 
 Customer churn is a major problem in the telecom industry. This project uses machine learning to analyze customer behavior and predict churn probability, helping businesses take proactive retention actions.
 
-# Objective
-Predict customer churn (Yes / No)
-Estimate churn probability
-Identify high-risk customers
-Build an interactive ML web app
+---
 
-📂 Dataset
-Source: Telco Customer Churn Dataset (IBM / Kaggle)
-Size: ~7043 customers
-Target Variable: Churn (0 = No, 1 = Yes)
-Features include:
-Customer demographics (Gender, Senior Citizen, Partner, Dependents)
-Services (Internet, Phone, Streaming, Security, etc.)
-Billing info (Monthly Charges, Total Charges, Payment Method)
-Contract details (Contract type, tenure)
+# 🎯 Objective
 
-# Machine Learning Pipeline
-🔹 Preprocessing
-Missing value handling (TotalCharges)
-One-Hot Encoding for categorical variables
-Feature alignment using saved column schema
-🔹 Models Tested
-Logistic Regression (Best Performer)
-K-Nearest Neighbors
-Naive Bayes
-Decision Tree
-Random Forest
-Support Vector Machine (SVM)
-🔹 Evaluation Metrics
-Accuracy
-Precision
-Recall
-F1 Score
-ROC-AUC
-Cross-validation F1
-# Best Model
-Model: Logistic Regression (or best selected model)
-Pipeline: StandardScaler + Classifier
-Metric Optimized: ROC-AUC / F1 Score
-# Web App (Streamlit)
+- Predict customer churn (Yes / No)
+- Estimate churn probability
+- Identify high-risk customers
+- Build an interactive ML web app
+
+---
+
+# 📂 Dataset
+
+- **Source:** Telco Customer Churn Dataset (IBM / Kaggle)
+- **Size:** ~7043 customers
+- **Target Variable:** Churn (0 = No, 1 = Yes)
+
+### Features include:
+- Customer demographics (Gender, Senior Citizen, Partner, Dependents)
+- Services (Internet, Phone, Streaming, Security, etc.)
+- Billing info (Monthly Charges, Total Charges, Payment Method)
+- Contract details (Contract type, tenure)
+
+---
+
+# ⚙️ Machine Learning Pipeline
+
+## 🔹 Preprocessing
+- Missing value handling (TotalCharges)
+- One-Hot Encoding for categorical variables
+- Feature alignment using saved column schema
+
+## 🔹 Models Tested
+- Logistic Regression (Best Performer)
+- K-Nearest Neighbors
+- Naive Bayes
+- Decision Tree
+- Random Forest
+- Support Vector Machine (SVM)
+
+## 🔹 Evaluation Metrics
+- Accuracy
+- Precision
+- Recall
+- F1 Score
+- ROC-AUC
+- Cross-validation F1
+
+---
+
+# 🏆 Best Model
+
+- **Model:** Logistic Regression (or best selected model)
+- **Pipeline:** StandardScaler + Classifier
+- **Optimized Metric:** ROC-AUC / F1 Score
+
+---
+
+# 🌐 Web App (Streamlit)
 
 Interactive UI built using Streamlit where users can:
 
-Enter customer details
-Get churn prediction instantly
-View churn probability
-See real-time model output
-# App Workflow
-User enters customer data
-Data is encoded using One-Hot Encoding
-Features are aligned with training schema
-Model predicts churn probability
-Result displayed in UI
-# Tech Stack
-Python 🐍
-Pandas & NumPy
-Scikit-learn
-Streamlit
-Joblib (Model saving)
-Matplotlib / Seaborn (EDA)
+- Enter customer details
+- Get churn prediction instantly
+- View churn probability
+- See real-time model output
 
-📁 Project Structure
+---
+
+# 🔄 App Workflow
+
+1. User enters customer data  
+2. Data is encoded using One-Hot Encoding  
+3. Features are aligned with training schema  
+4. Model predicts churn probability  
+5. Result displayed in UI  
+
+
+
+# 🛠 Tech Stack
+
+- Python 🐍  
+- Pandas & NumPy  
+- Scikit-learn  
+- Streamlit  
+- Joblib (Model saving)  
+- Matplotlib / Seaborn (EDA)
+
+
+
+# 📁 Project Structure
+
 churn-prediction/
 │
 ├── app1.py                     # Streamlit app
