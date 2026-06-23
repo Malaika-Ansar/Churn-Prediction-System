@@ -102,11 +102,11 @@ Interactive UI built using Streamlit where users can:
 
 churn-prediction/
 │
-├── app1.py # Streamlit app
-├── best_onehot_model.pkl # Trained ML model
-├── columns_onehot.pkl # Feature columns schema
-├── WA_Fn-UseC_-Telco-Customer-Churn.csv # Dataset
-├── Churnn.ipynb # Model training notebook
+├── app1.py                     # Streamlit app
+├── best_onehot_model.pkl      # Trained ML model
+├── columns_onehot.pkl         # Feature columns schema
+├── WA_Fn-UseC_-Telco-Customer-Churn.csv  # Dataset
+├── Churnn.ipynb               # Model training notebook
 └── README.md
 
 # How to Run Locally
