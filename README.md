@@ -102,19 +102,21 @@ Interactive UI built using Streamlit where users can:
 
 churn-prediction/
 │
-├── app1.py                     # Streamlit app
-├── best_onehot_model.pkl      # Trained ML model
-├── columns_onehot.pkl         # Feature columns schema
-├── WA_Fn-UseC_-Telco-Customer-Churn.csv                # Telco churn dataset
-├── Churnn.ipynb             # Model training notebook
+├── app1.py # Streamlit app
+├── best_onehot_model.pkl # Trained ML model
+├── columns_onehot.pkl # Feature columns schema
+├── WA_Fn-UseC_-Telco-Customer-Churn.csv # Dataset
+├── Churnn.ipynb # Model training notebook
 └── README.md
 
 # How to Run Locally
 1️⃣ Install dependencies
 pip install -r requirements.txt
+
 2️⃣ Run Streamlit app
 streamlit run app.py
-📊 Key Insights
+
+# Key Insights
 Month-to-month contracts show highest churn risk
 Electronic check users churn more frequently
 Low tenure customers are more likely to leave
